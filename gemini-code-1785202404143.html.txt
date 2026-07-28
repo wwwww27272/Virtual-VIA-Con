@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>VIA Town Explorer</title>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="game-container">
+  <!-- Touch D-Pad for Mobile/iPad -->
+  <div id="touch-controls">
+    <div class="d-pad">
+      <div class="btn-ctrl btn-up" id="btn-up">▲</div>
+      <div class="btn-ctrl btn-left" id="btn-left">◀</div>
+      <div class="btn-ctrl btn-down" id="btn-down">▼</div>
+      <div class="btn-ctrl btn-right" id="btn-right">▶</div>
+    </div>
+    <div class="hint-tag">🎮 WASD / Arrows / D-Pad</div>
+  </div>
+
+  <!-- Organization Info Modal -->
+  <div id="org-modal" class="modal">
+    <button class="close-btn" id="modal-close">&times;</button>
+    <span id="modal-category" class="category">VIA Category</span>
+    <h2 id="modal-title">Organization Title</h2>
+    <p id="modal-desc">Description of VIA initiative...</p>
+    <a id="modal-link" href="#" target="_blank" class="contact-btn">Visit Website / Sign Up ↗</a>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
